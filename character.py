@@ -42,3 +42,17 @@ class Enemy(character):
         else: 
             print(f"{self.name} crashes you, peny adventurer")
             return False
+        
+    def steal(self):
+        if self.has_item:
+            print("You successfully steal from the enemy!")
+            self.has_item = False
+        else:
+            print("The enemy has nothing to steal.")
+
+class Friend(character):
+    def __init__(self, name, description):
+        super().__init__(name, description)
+        
+    def hug(self):
+        print(f"You give {self.name} a warm hug.")

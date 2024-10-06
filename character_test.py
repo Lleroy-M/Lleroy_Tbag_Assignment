@@ -9,4 +9,4 @@ dave.set_weakness("cheese")
 
 print("what will you fight with?")
 fight_with = input("enter item here: ")
-dave.fight(fight_with)
+dave.fight(fight_with) 

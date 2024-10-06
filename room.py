@@ -43,3 +43,5 @@ class Room():
         else:
             print("You can't go that way!")
             return self
+        
+    print(f"You see a {room_item.name} here.")
