@@ -13,17 +13,17 @@ dave.set_conversation("hi im Dave i wont bite you!")
 dave.set_weakness("cheese")
 dining_hall.set_character(dave)
 
-bob = character("Bob", "A friendly shopkeeper.")
+bob = Friend("Bob", "A friendly shopkeeper.")
 ballroom.set_character(bob)
 
 kitchen.set_description("A dank and dirty room buzzing with flies")
 ballroom.set_description("A vast room with a shining gold plate")
 dining_hall.set_description("A large room with ornate descriptions")
 
-entrance_hall = Room("Entrance Hall", "A grand hall with a locked door to the north.")
-entrance_hall.locked = True # Assuming 'locked' is an attribute of the Room class
-dining_room = Room("Dining Room", "A large room with a long table.")
+entrance_hall = Room("Entrance Hall")
+entrance_hall.description("A grand hall with a locked door to the north.")
 
+dining_room = Room("Dining Room", "A large room with a long table.")
 # ... placing the key ...
 dining_room.set_item(key) 
 
